@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</body>
+<script>
+    let num = 'num- 52.2/13.45-//5777776\];casc-2141//.556';
+
+    function parseNum(a, look, int){
+        console.log(a);
+        if (a == '') {
+            return console.log('нету заходного парметра. Например "num- 52.2/13.45-//5777776\];casc-2141//.556"');
+        }
+        a = a.match(/-?\d+(\.\d+)?/g);        
+        for (let i in a) {
+            if (look == "1") {
+                console.log(parseFloat(a[i]));
+            }
+        }
+        if (int == '') {
+            return console.log('выберите, какое число вам нужно третим параметром в функции');
+        } else {
+            return Number(a[int]);
+        }
+    }
+    parseNum(num, 0, 0);
+
+
+</script>
+</html>
