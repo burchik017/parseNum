@@ -1,0 +1,57 @@
+a:active, a:focus { 
+    outline: none; 
+}
+input, textarea {
+    outline:none;
+}
+input:active, textarea:active {
+    outline:none;
+}
+:focus {
+    outline:none;
+}
+textarea {
+    resize:none;
+}
+textarea {
+    resize:vertical;
+}
+textarea {
+    resize:horizontal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 100vh;
+}
+body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body main input {
+    padding: 10px 5px;
+    width: 100%;
+    max-width: 60vw;
+    margin-bottom: 20px;
+}
+body main button {
+    background: #02e8f8;
+    color: #25c0a6;
+    padding: 12px 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 140px;
+    border-radius: 20px;
+    box-shadow: #242727 -1px 4px 12px 1px;
+    cursor: pointer;
+}
+body main button:active {
+    background: #242727;
+    color: #e2df24;
+    box-shadow: #242727 -1px -4px 12px 1px;
+}
